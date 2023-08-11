@@ -9,7 +9,7 @@ function App() {
   useEffect(() => {
     (async () => {
       const response = await fetch(
-        `${process.env.REACT_APP_API_URL}/weather/?q=Sankt+Anna+am+Aigen&units=metric&lang=de&APPID=${process.env.REACT_APP_API_KEY}`
+        `${process.env.REACT_APP_API_URL}/weather/?q=Wien&units=metric&lang=de&APPID=${process.env.REACT_APP_API_KEY}`
       );
 
       const result = await response.json();
