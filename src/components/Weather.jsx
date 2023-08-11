@@ -27,16 +27,24 @@ export default function Weather({ weatherData }) {
           </div>
 
           <div className="text-xs text-gray-600">
-            Sonnenaufgang:
-            {new Date(weatherData.sys.sunrise * 1000).toLocaleTimeString(
-              "de-DE"
-            )}
+            <p>
+              Sonnenaufgang:&nbsp;
+              <span>
+                {new Date(weatherData.sys.sunrise * 1000).toLocaleTimeString(
+                  "de-DE"
+                )}
+              </span>
+            </p>
           </div>
           <div className="text-xs text-gray-600">
-            Sonnenuntergang:
-            {new Date(weatherData.sys.sunset * 1000).toLocaleTimeString(
-              "de-DE"
-            )}
+            <p>
+              Sonnenuntergang:&nbsp;
+              <span>
+                {new Date(weatherData.sys.sunset * 1000).toLocaleTimeString(
+                  "de-DE"
+                )}
+              </span>
+            </p>
           </div>
           <div className="text-xs text-gray-600">
             Beschreibung: {weatherData.weather[0].description}
